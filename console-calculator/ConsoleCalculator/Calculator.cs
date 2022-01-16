@@ -23,22 +23,25 @@ namespace ConsoleCalculator
 
         public string DisplayText { get; private set; } = string.Empty;
 
-        public int SendKeystroke(char keyChar)
+        public int SendKeystroke()
         {
             Game game = new Game();
-            int totalFrames;
+
+            int totalFrames = 10;
 
             int.TryParse(ConfigurationManager.AppSettings["TotalFrames"], out totalFrames);
             List<int> lstpins = new List<int> { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 };
 
+           
             //Frames are Configurable 
             Frame frame = new Frame()
             {
-                totalFrames = totalFrames,
-                listpins = lstpins
+                
+                 totalFrames = (totalFrames != 0) ? totalFrames : 10,
+                 listpins = lstpins
             };
-          
-           int finalScore =  game.GetScore(frame);
+
+            int finalScore =  game.GetScore(frame);
 
             return finalScore;
 

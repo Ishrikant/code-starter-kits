@@ -28,7 +28,7 @@ namespace ConsoleCalculator
                     Console.Write("***** Bowling Ball Game started... ****" + Environment.NewLine + Environment.NewLine);
 
 
-                    int score = calc.SendKeystroke(key.KeyChar);
+                    int score = calc.SendKeystroke();
 
                     Console.Write("***** Final Score ****" + score + Environment.NewLine );
                     Console.ReadLine(); 

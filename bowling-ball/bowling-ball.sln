@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalculator", "..\con
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectComparer", "..\object-comparer\ObjectComparer\ObjectComparer.csproj", "{C28C3A10-FB55-48C0-AF31-3282D58154E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCalculator.Tests", "..\console-calculator\ConsoleCalculator.Tests\ConsoleCalculator.Tests.csproj", "{12F5CFC6-E674-4674-9221-6E7F2952B42A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C28C3A10-FB55-48C0-AF31-3282D58154E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C28C3A10-FB55-48C0-AF31-3282D58154E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C28C3A10-FB55-48C0-AF31-3282D58154E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F5CFC6-E674-4674-9221-6E7F2952B42A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F5CFC6-E674-4674-9221-6E7F2952B42A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F5CFC6-E674-4674-9221-6E7F2952B42A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F5CFC6-E674-4674-9221-6E7F2952B42A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

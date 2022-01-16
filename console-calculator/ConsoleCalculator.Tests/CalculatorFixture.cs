@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
+
 namespace ConsoleCalculator.Tests
 {
     [TestClass]
@@ -11,6 +12,15 @@ namespace ConsoleCalculator.Tests
         {
             var calc = new Calculator();
             Assert.AreEqual(string.Empty, calc.DisplayText);
+        }
+
+
+        [TestMethod]
+        public void GetFinalScore()
+        {
+            var calc = new Calculator();                     
+             int result = calc.SendKeystroke();
+            Assert.AreEqual(300, result);
         }
     }
 }
